@@ -1,0 +1,18 @@
+#rain-canvas {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+
+     z-index: -1; 
+    /* z-index: 9999; */
+}
+
+/* 이것때문에 배경이 검정됨
+body {
+    background: #111;
+}
+*/

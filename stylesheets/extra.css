@@ -1,0 +1,118 @@
+// 회전애니메이션~~
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(120deg); }
+  50% { transform: rotate(240deg); }
+  75% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+.spin {
+  animation: spin 1000ms infinite;
+}
+
+@keyframes tentacle {
+  0%, 100%   { transform: rotate(0deg); }
+  20%        { transform: rotate(10deg); }
+  40%        { transform: rotate(-10deg); }
+  60%        { transform: rotate(10deg); }
+  80%        { transform: rotate(-10deg); }
+}
+.tentacle {
+  animation: tentacle 0.6s infinite;
+  transform-origin: center;
+}
+.shake {
+  animation: tentacle 3.2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes wiggle-jump {
+  0%, 100%   { transform: translate(0,0) rotate(0deg); }
+  25%        { transform: translate(5px,-5px) rotate(5deg); }
+  50%        { transform: translate(-5px,-10px) rotate(-5deg); }
+  75%        { transform: translate(5px,-5px) rotate(5deg); }
+}
+.wiggle-jump {
+  animation: wiggle-jump 0.8s infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(90deg); }
+  50%  { transform: rotate(180deg); }
+  75%  { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 4s linear infinite !important;
+}
+
+/*
+.md-header__button.md-logo img {
+  animation: spin-step 4s linear infinite !important;
+  transform-origin: center;
+}
+*/
+.md-header__button.md-logo img {
+  transform-origin: center;
+  animation: none; /* 평상시에는 애니메이션 없음 */
+}
+.md-header__button.md-logo img:hover {
+//  animation: spin 4s linear infinite !important;
+  animation: tentacle 0.6s infinite; transform-origin: center;
+}
+
+//.md-header__button.md-logo img {
+//  animation: shake 0.5s infinite;
+//}
+// .md-header__button.md-logo img {
+//  animation: dvd-bounce 4s linear infinite;
+// }
+
+
+
+
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+}
+
+
+
+
+//:root {
+//  --md-primary-fg-color: #baf5dd;
+//}
+
+/* 상단바 전체 배경 */
+// .md-header,
+// .md-header--shadow {
+//.md-header {
+//  background-color: #baf5dd;    // !important;
+//}
+
+/* 제목, 아이콘 색 */
+//.md-header__title,
+//.md-header__button,
+//.md-header__button svg {
+//  color: #ffffff !important;
+//  fill: #ffffff !important;
+//}
+
+/* CHECK IF CSS LOADS */
+body::before {
+  content: "CSS LOADED";
+  color: red;
+  position: fixed;
+  top: 0; left: 0;
+  background: white;
+  z-index: 9999;
+}
