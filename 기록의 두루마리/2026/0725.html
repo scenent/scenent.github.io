@@ -1,0 +1,8144 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Write your documentation in Markdown and create a professional static site in minutes – searchable, customizable, in 60+ languages, for all devices">
+      
+      
+        <meta name="author" content="scenent">
+      
+      
+        <link rel="canonical" href="https://scenent.github.io/%EA%B8%B0%EB%A1%9D%EC%9D%98%20%EB%91%90%EB%A3%A8%EB%A7%88%EB%A6%AC/2026/0725.html">
+      
+      
+        <link rel="prev" href="0426.html">
+      
+      
+        <link rel="next" href="0728.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>0725 - devlog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/rain.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-6DK0JYGZBD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-6DK0JYGZBD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-6DK0JYGZBD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="devlog" class="md-header__button md-logo" aria-label="devlog" data-md-component="logo">
+      
+  <img src="../../icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            devlog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              0725
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="다크 모드"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="cyan"  aria-label="라이트 모드"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/scenent/scenent.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    scenent/scenent.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  지식의 구렁텅이
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  기록의 두루마리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  잡다한 취미생활
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  구겨진 말뭉치들
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="devlog" class="md-nav__button md-logo" aria-label="devlog" data-md-component="logo">
+      
+  <img src="../../icon.png" alt="logo">
+
+    </a>
+    devlog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/scenent/scenent.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    scenent/scenent.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    지식의 구렁텅이
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    지식의 구렁텅이
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    환영합니다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenGL
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OpenGL
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/00.%20OpenGL%20%EC%86%8C%EA%B0%9C%EC%99%80%20%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. OpenGL 소개와 주의사항
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/01.%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%EC%84%B8%ED%8C%85%EA%B3%BC%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EC%97%B4%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 개발환경 세팅과 윈도우 열기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/02.%20%EC%82%BC%EA%B0%81%ED%98%95%20%EA%B7%B8%EB%A6%AC%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 삼각형 그리기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/03.%20%EC%9C%88%EB%8F%84%EC%9A%B0%20%EC%9E%85%EB%A0%A5%EA%B3%BC%20OpenGL%EC%97%90%EC%84%9C%EC%9D%98%20%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%94%A9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. 윈도우 입력과 OpenGL에서의 멀티스레딩
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/04.%20%EC%A2%8C%ED%91%9C%EA%B3%84%EC%99%80%20WVP%ED%96%89%EB%A0%AC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. 좌표계와 WVP행렬
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/05.%20%ED%85%8D%EC%8A%A4%EC%B3%90%EC%9D%98%20%EC%82%AC%EC%9A%A9.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. 텍스쳐의 사용
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/06.%20%EC%A4%91%EA%B0%84%EC%A0%90%EA%B2%80%20-%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%99%84%EC%84%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. 중간점검 - 클래스 완성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/07.%203D%EB%A1%9C%EC%9D%98%20%ED%99%95%EC%9E%A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. 3D로의 확장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/08.%203D%20%EC%B9%B4%EB%A9%94%EB%9D%BC%EC%99%80%20%EC%BF%BC%ED%84%B0%EB%8B%88%EC%96%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. 3D 카메라와 쿼터니언
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/09.%20%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B0%95%EC%8A%A4%EC%9D%98%20%EA%B5%AC%ED%98%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. 스카이박스의 구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/10.%203D%20%EC%85%B0%EC%9D%B4%EB%94%A9%20%EA%B8%B0%EB%B2%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. 3D 셰이딩 기법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/OpenGL/50.%20Screen%20Space%20Reflection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    50. Screen Space Reflection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vulkan
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vulkan
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/Vulkan/0.%20Vulkan%20%EC%86%8C%EA%B0%9C%EC%99%80%20%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. Vulkan 소개와 주의사항
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    계산기하학
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    계산기하학
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%EA%B3%84%EC%82%B0%EA%B8%B0%ED%95%98%ED%95%99/0.%20%EC%86%8C%EA%B0%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. 소개
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    물리엔진 프로그래밍
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    물리엔진 프로그래밍
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%EB%AC%BC%EB%A6%AC%EC%97%94%EC%A7%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/0.%20%EC%86%8C%EA%B0%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. 소개
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5_2" id="__nav_1_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2D
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2D
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%EB%AC%BC%EB%A6%AC%EC%97%94%EC%A7%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/2D/01.%20%EB%AC%BC%EB%A6%AC%EC%97%94%EC%A7%84%EC%9D%98%20%EA%B5%AC%EC%A1%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 물리엔진의 구조
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B5%AC%EB%A0%81%ED%85%85%EC%9D%B4/%EB%AC%BC%EB%A6%AC%EC%97%94%EC%A7%84%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/2D/02.%20%EC%B6%A9%EB%8F%8C%20%EA%B0%90%EC%A7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 충돌 감지 알고리즘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기록의 두루마리
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    기록의 두루마리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    환영합니다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0417.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0417
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0418.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0418
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0419.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0420.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0420
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0421.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0421
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0422.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0423.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0423
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0424.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0424
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0425.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0425
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0426.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0426
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0427.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0427
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0428.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0428
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0429.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0429
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0510.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0510
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0511.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0511
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0512.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0512
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0516.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0516
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0824.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0824
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/0927.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0927
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2025/1230.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1230
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0119.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0119
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0124.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0124
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0129.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0129
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0130.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0130
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0213.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0213
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0314.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0314
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0322.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0322
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0412.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0412
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0426.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0426
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="0725.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0725
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0728.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0728
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0729.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0729
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시기불명
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    시기불명
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%EC%8B%9C%EA%B8%B0%EB%B6%88%EB%AA%85/%EC%95%8C%ED%8C%8C%EC%B1%84%EB%84%90%EC%9D%84%20%ED%8F%AC%ED%95%A8%ED%95%9C%20%EC%85%B0%EB%8F%84%EC%9A%B0%EB%A7%A4%ED%95%91.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    알파채널을 포함한 셰도우매핑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%EC%8B%9C%EA%B8%B0%EB%B6%88%EB%AA%85/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%84%88%20%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    플레이너 리플렉션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    잡다한 취미생활
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    잡다한 취미생활
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    환영합니다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    사진
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사진
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    바다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%82%AC%EC%A7%84/%EB%B4%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    봄
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B0%95%201.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    한강 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%82%AC%EC%A7%84/%ED%95%9C%EA%B0%95%202.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    한강 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    음악
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    음악
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/Endless%20Rain.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endless Rain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/Goodbye.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Goodbye
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/Paradise%20City.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paradise City
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/Ventura%20Highway.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ventura Highway
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/While%20My%20Guitar%20Gently%20Weeps%20%28Anthology%203%29.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    While My Guitar Gently Weeps (Anthology 3)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/%E5%A4%8F%E5%BD%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    夏影
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/%E5%B0%91%E5%A5%B3%E3%83%AC%E3%82%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    少女レイ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_8" id="__nav_3_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShibayanRecords
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ShibayanRecords
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/ShibayanRecords/Adrastea.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adrastea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%8C%EC%95%85/ShibayanRecords/Broad%20Border.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Broad Border
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    이야기들
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    이야기들
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%EC%9D%B4%EC%95%BC%EA%B8%B0%EB%93%A4/%EC%A2%8B%EC%95%84%ED%95%98%EB%8A%94%20%EC%9D%8C%EC%95%85.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    좋아하는 음악
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    필사
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    필사
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/Huis%20Clos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Huis Clos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EA%BF%88.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    꿈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EB%82%98%EC%99%80%20%EB%82%98%ED%83%80%EC%83%A4%EC%99%80%20%ED%9D%B0%20%EB%8B%B9%EB%82%98%EA%B7%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    나와 나타샤와 흰 당나귀
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EB%82%98%EC%9D%98%20%EB%9D%BC%EC%9E%84%20%EC%98%A4%EB%A0%8C%EC%A7%80%EB%82%98%EB%AC%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    나의 라임 오렌지나무
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EB%AA%A8%EB%AA%A8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    모모
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EB%B0%94%EB%9E%8C%EC%9D%B4%20%EB%B6%88%EC%96%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    바람이 불어
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EB%B3%84%20%ED%97%A4%EB%8A%94%20%EB%B0%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    별 헤는 밤
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EC%84%9C%EC%8B%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    서시
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EC%96%B4%EB%A6%B0%20%EC%99%95%EC%9E%90.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    어린 왕자
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%EC%A0%8A%EC%9D%80%20%EB%B2%A0%EB%A5%B4%ED%85%8C%EB%A5%B4%EC%9D%98%20%EC%8A%AC%ED%94%94.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    젊은 베르테르의 슬픔
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%9E%A1%EB%8B%A4%ED%95%9C%20%EC%B7%A8%EB%AF%B8%EC%83%9D%ED%99%9C/%ED%95%84%EC%82%AC/%ED%9D%B0%20%EB%B0%94%EB%9E%8C%EB%B2%BD%EC%9D%B4%20%EC%9E%88%EC%96%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    흰 바람벽이 있어
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    구겨진 말뭉치들
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    구겨진 말뭉치들
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    환영합니다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0325%202D%20%EC%8A%A4%ED%81%AC%EB%A6%B0%20%ED%94%BC%ED%82%B9%20%EA%B3%BC%EC%A0%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0325 2D 스크린 피킹 과정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0326%20%EA%B2%8C%EC%9E%84%EC%97%94%EC%A7%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0326 게임엔진프로젝트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0326%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EC%96%B8%EC%96%B4%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%93%B0%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0326 컴파일언어스크립팅용으로쓰기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0327%20UI%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%A7%8C%EB%93%A4%20%EB%95%8C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0327 UI시스템 만들 때
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0328%20DLL_API%EB%A7%8C%EB%93%A4%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0328 DLL API만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0330%202D%EB%AC%BC%EB%A6%AC%EC%99%80%EB%A1%9C%EC%BB%AC-%EA%B8%80%EB%A1%9C%EB%B2%8C%EA%B3%84%EC%B8%B5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0330 2D물리와로컬 글로벌계층
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0330%20%EB%AC%BC%EB%A6%AC%EC%97%94%EC%A7%84%20%ED%86%B5%ED%95%A9%ED%95%A0%EB%95%8C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0330 물리엔진 통합할때
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0402%20Z%ED%94%84%EB%A6%AC%ED%8C%A8%EC%8A%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0402 Z프리패스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0403%20%28%EC%97%B0%EA%B5%AC%20%ED%95%84%EC%9A%94%29%20%EB%8F%99%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EB%B6%80%EB%A5%B4%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0403 (연구 필요) 동적으로 메서드 부르기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0404%20decltype%EC%B6%94%EB%A1%A0%20%EC%B5%9C%EC%A0%81%ED%99%94.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0404 decltype추론 최적화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0413%20%EA%B2%8C%EC%9E%84%EC%97%94%EC%A7%84%EB%94%94%EC%9E%90%EC%9D%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0413 게임엔진디자인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0417%20CRTP%20%EB%B0%B0%EC%B9%98%EB%A0%8C%EB%8D%94%EB%A7%81%20%EB%94%94%EC%9E%90%EC%9D%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0417 CRTP 배치렌더링 디자인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0417%20CoordinateSystemCvt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0417 CoordinateSystemCvt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0417%20%EB%A9%94%EC%8B%9C-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8B%B1%EC%9D%98%20%EA%B0%9C%EB%85%90%ED%99%94.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0417 메시 포스트 프로세싱의 개념화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0418%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_%EC%8B%9C%EC%8A%A4%ED%85%9C0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0418 인터페이스 시스템0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0419%20H_V%EC%BD%98%ED%85%8C%EC%9D%B4%EB%84%88%EC%97%90%20%EC%9E%88%EC%96%B4%EC%95%BC%20%ED%95%A0%EA%B2%83.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419 H V콘테이너에 있어야 할것
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0419%20%EA%B2%B9%EC%B9%98%EB%8A%94UI%ED%81%B4%EB%A6%AC%ED%95%91_ScissorClip.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419 겹치는UI클리핑 ScissorClip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0419%20%EA%B3%A0%EB%8F%84%EC%9D%98_%EC%84%B8%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0%EA%B5%AC%ED%98%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419 고도의 세퍼레이터구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0419%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9C%84%EC%B9%98%EB%8A%94%20Viewport%EB%85%B8%EB%93%9C%20%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419 마우스 위치는 Viewport노드 기준으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0419%20%EC%9D%BC%EB%8B%A8HScrollContainer%EB%A5%BC%EB%A7%8C%EB%93%A4%EC%9E%90.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0419 일단HScrollContainer를만들자
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0420%20%EA%B2%B9%EC%B9%98%EB%8A%94UI%ED%81%B4%EB%A6%AC%ED%95%91_%EC%BD%9C%EB%8D%B1%EC%9D%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0420 겹치는UI클리핑 콜덱은
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0420%20%ED%8E%BC%EC%B9%98%EA%B3%A0%EC%A0%91%EB%8A%94_%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0420 펼치고접는 트리노드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0422%20%28%EC%A4%91%EC%9A%94%21%21%29%20UI%EC%97%90%20%EA%B3%A0%EB%A0%A4%ED%95%A0%20%EA%B2%83.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422 (중요!!) UI에 고려할 것
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0422%20Z-Order%EB%9E%91%20%ED%8F%AC%EC%BB%A4%EC%8B%B1%20%EA%B4%80%EB%A0%A8%ED%95%B4%EC%84%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422 Z Order랑 포커싱 관련해서
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0422%20%EA%B3%A0%EC%A0%95%EB%90%9C%EC%B5%9C%EC%83%81%EC%9C%84%EC%B9%B4%EB%A9%94%EB%9D%BC_%EB%B7%B0%ED%8F%AC%ED%8A%B8%EB%B3%80%ED%99%98%ED%95%A0%EB%95%8C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422 고정된최상위카메라 뷰포트변환할때
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0422%20%EC%B9%B4%EB%A9%94%EB%9D%BC%EB%AC%B4%EC%8B%9C_%EC%86%8D%EC%84%B1%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422 카메라무시 속성추가하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0422%20%EC%BB%AC%EB%9F%AC%ED%94%BC%EC%BB%A4_%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%EB%B2%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0422 컬러피커 구현하는법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0423%20ObjectView.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0423 ObjectView
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0423%20%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%BC%EC%97%90%EB%94%94%ED%84%B0%EC%97%90_%EC%8A%A4%EC%BC%80%EC%9D%BC%EC%9D%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0423 트랜스폼에디터에 스케일은
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0424%20%EC%B5%9C%EC%83%81%EC%9C%84%EC%BD%98%ED%85%8C%EC%9D%B4%EB%84%88%EC%97%90%EC%84%9C_%EC%96%B4%EB%96%A4%EA%B1%B4%EA%B0%80%EB%A7%8C%ED%9E%88_%EC%96%B4%EB%96%A4%EA%B1%B4Fill.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0424 최상위콘테이너에서 어떤건가만히 어떤건Fill
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0425%20%EB%A9%94%EB%89%B4%EB%B2%84%ED%8A%BC%2C%20%EC%BB%AC%EB%9F%AC%ED%94%BC%EC%BB%A4%20%EB%AD%90%20%EA%B7%B8%EB%9F%B0%20%EA%B2%83%EB%93%A4%EC%9D%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0425 메뉴버튼, 컬러피커 뭐 그런 것들은
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0426%20%EC%84%B8%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0%EA%B5%AC%ED%98%84%EC%A0%9C%EC%95%BD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0426 세퍼레이터구현제약
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0427%20%28%ED%95%B4%EA%B2%B0%EB%90%A8%29%20%EB%B2%84%EA%B7%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0427 (해결됨) 버그
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0429%20%EC%BB%A4%EC%84%9C%EC%9C%84%EC%B9%98_%EB%B7%B0_%EC%9B%94%EB%93%9C_%EC%83%81%ED%98%B8%EB%B3%80%ED%99%98.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0429 커서위치 뷰 월드 상호변환
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0430%20HContainer%EB%B3%B4%EC%99%84%ED%95%A0%EC%A0%90.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0430 HContainer보완할점
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0503%20%EC%83%9D%EA%B0%81%ED%95%B4%EB%B3%B4%EB%8B%88%EA%B9%8C%EC%9B%94%EB%93%9C%EA%B8%B0%EC%A4%80%EC%BB%A4%EC%84%9C%EB%A5%BC%EC%93%B4%EB%8B%A4%EB%A9%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0503 생각해보니까월드기준커서를쓴다면
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20TODO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 TODO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EA%B2%B9%EC%B9%98%EB%8A%94UI%EC%97%90%EB%8C%80%ED%95%B4%EC%84%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 겹치는UI에대해서
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EB%82%98%EC%A4%91%EC%97%90%EC%97%AC%EB%9F%AC%EC%95%B1%EC%97%90%EB%8C%80%ED%95%9C_%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%94%A9%EC%9D%B8%ED%92%8B%ED%8F%B4%EB%A7%81%EC%B6%94%EA%B0%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 나중에여러앱에대한 멀티스레딩인풋폴링추가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EB%9F%B0%ED%83%80%EC%9E%84%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98type_index%EB%A1%9C%EB%B0%94%EA%BE%B8%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 런타임리플렉션type index로바꾸기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EB%AA%A8%EB%8D%B8%EB%B0%91%EC%97%90%EC%97%AC%EB%9F%AC%EB%A9%94%EC%8B%9C%EB%85%B8%EB%93%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 모델밑에여러메시노드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EC%97%90%EB%94%94%ED%84%B0_%EC%98%AC%EB%A6%AC%EB%8A%94%EA%B1%B0_%EC%A0%95%EB%A6%AC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 에디터 올리는거 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0504%20%EC%B9%B4%EB%A9%94%EB%9D%BC%EC%99%80_%EC%83%81%EA%B4%80%EC%97%86%EB%8A%94_UI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 카메라와 상관없는 UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0510%20%EC%84%B9%EC%85%98%EC%84%A0%ED%83%9D.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0510 섹션선택
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0511%20%28%EC%A4%91%EC%9A%94%29%20%ED%8C%9D%EC%97%85GUI%20-%20%ED%95%B4%EB%8B%B5%20-%20UILayer%EC%9D%98%20%EA%B5%AC%ED%98%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0511 (중요) 팝업GUI   해답   UILayer의 구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0511%20TODO-UILayer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0511 TODO UILayer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0511%20%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94%20%ED%8C%90%EB%84%AC%EC%9D%98%20%EA%B2%BD%EC%9A%B0%EC%97%90%EB%8A%94.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0511 움직이는 판넬의 경우에는
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0511%20%EC%9D%BC%EC%8B%9C%EC%A0%81%EC%B5%9C%EC%83%81%EB%8B%A8GUI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0511 일시적최상단GUI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0514%203D%ED%94%BC%ED%82%B9%EC%A2%85%EB%A5%98%EB%8A%943%EA%B0%9C%EB%8B%A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0514 3D피킹종류는3개다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0518%20Signal%26Connect%26Disconnect.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0518 Signal&Connect&Disconnect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0518%20VariantImpl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0518 VariantImpl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0518%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%20%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%8B%A4%EC%8B%9C%20%EC%83%9D%EA%B0%81%ED%95%B4%EB%B3%B4%EC%9E%90.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0518 오브젝트 컴포지션에 대해 다시 생각해보자
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0519%20polygon%EC%BD%9C%EB%8D%B1%EC%9D%B4%EB%9E%91_rect%EC%BD%9C%EB%8D%B1%EA%B2%BD%EC%9A%B0%EC%9D%98%EC%88%98.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0519 polygon콜덱이랑 rect콜덱경우의수
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0621%20%EC%85%B0%EC%9D%B4%EB%8D%94%ED%81%B4%EB%A6%AC%ED%95%91%EC%95%88%EC%93%B0%EB%8A%94%EB%B2%95.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0621 셰이더클리핑안쓰는법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/0713%20%EC%83%9D%EC%84%B1%EC%9E%90%EC%97%90%EC%84%9C%EB%8A%94%20%EA%B0%80%EC%83%81%ED%95%A8%EC%88%98%20%EB%B6%80%EB%A5%B4%EC%A7%80%20%EB%A7%90%EC%9E%90%21%21%21.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0713 생성자에서는 가상함수 부르지 말자!!!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2025/1216%20typeErasure_%EC%83%81%EC%86%8D%EC%97%86%EC%9D%B4_%EB%8B%A4%ED%98%95%EC%84%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1216 typeErasure 상속없이 다형성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0220%20AI%EC%97%90%20%EB%8C%80%ED%95%9C%20%EC%83%9D%EA%B0%81.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0220 AI에 대한 생각
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0301%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4%EC%9D%98%20%EB%AF%B8%ED%95%99.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0301 그래픽스의 미학
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0305%20%EB%B2%95%EC%84%A0%EC%9D%84%20%EB%A7%8C%EB%93%9C%EB%8A%94%20%EC%A0%95%EB%8F%84%EC%9D%98%20%EB%8A%A5%EB%A0%A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0305 법선을 만드는 정도의 능력
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0307%20%EC%A7%80%EC%8B%9D%EC%9D%98%20%EA%B4%80%EA%B3%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0307 지식의 관계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0311%20%EB%B3%B5%EC%85%80%20%EB%9D%BC%EC%9D%B4%ED%8C%85.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0311 복셀 라이팅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0312%20%EB%A0%8C%EC%A6%88%20%ED%94%8C%EB%A0%88%EC%96%B4%EC%9D%98%20%EA%B5%AC%ED%98%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0312 렌즈 플레어의 구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0312%20%EC%98%A4%ED%81%B4%EB%A3%A8%EC%A0%BC%20%EC%BF%BC%EB%A6%AC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0312 오클루젼 쿼리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0330%20%EA%B8%B0%EB%A1%9D%EC%9D%98%20%EC%9D%B4%EC%9C%A0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0330 기록의 이유
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0404%20%EB%B4%84%EB%82%A0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0404 봄날
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0405%20%EC%A7%91%EC%A4%91.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0405 집중
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0412%200.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0412 0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0416%20%EC%8B%9C%EC%9E%91%EB%90%98%EB%8A%94%20%EC%97%AC%EB%A6%84%EB%82%A0%EC%94%A8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0416 시작되는 여름날씨
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0418%20%EC%9E%90%EA%B8%B0%EC%A4%91%EC%8B%AC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0418 자기중심
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0424%20soa.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0424 soa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0502%20discard%20%EC%93%B0%EC%A7%80%20%EC%95%8A%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0502 discard 쓰지 않기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0504%20%ED%83%80%EC%9D%B8%20%EB%B9%84%EB%82%9C%ED%95%98%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0504 타인 비난하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0513%20cpp_%EB%B9%84%ED%8A%B8%ED%95%84%EB%93%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0513 cpp 비트필드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0514%20%EC%A7%84%EC%A7%9C%20%EC%8B%9C%EC%9E%91%EB%90%98%EB%8A%94%20%EC%97%AC%EB%A6%84%EB%82%A0%EC%94%A8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0514 진짜 시작되는 여름날씨
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0515%20%EC%A2%8B%EC%9D%80%20UI%20%EA%B0%9C%EB%B0%9C%20%ED%88%B4%EC%9D%B4%EB%9E%80.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0515 좋은 UI 개발 툴이란
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0516%20%EC%95%84%EC%B9%B4%EC%8B%9C%EC%95%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0516 아카시아
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0526%20sk.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0526 sk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0527%20%EC%9A%B0%EC%82%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0527 우산
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0529%20ubo%20%EC%A0%91%EA%B7%BC%EA%B6%8C%ED%95%9C.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0529 ubo 접근권한
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0605%20TBN%EC%9D%B4%20%EB%AD%90%EB%83%90%EA%B5%AC%EC%9A%94.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0605 TBN이 뭐냐구요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0609%20%28%EC%A4%91%EC%9A%94%29%20Hybrid-SSR.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0609 (중요) Hybrid SSR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0610%20%EC%85%B0%EC%9D%B4%EB%8D%94%EC%97%90%20%EB%AA%A8%EB%8D%B8%20%EB%82%B4%EC%9E%A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0610 셰이더에 모델 내장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0613%20%EA%B0%80%EC%B9%98%20%ED%8C%BD%EC%9D%B4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0613 가치 팽이
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0613%20%EC%9D%98%EB%AC%B8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0613 의문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0616%20%EB%AC%B8%ED%95%99%EA%B3%BC%20%EC%98%88%EC%88%A0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0616 문학과 예술
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0619%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EA%B2%8C%EC%8B%9C%EC%9D%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0619 사이트 게시일
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0703%20%EC%98%A4%EB%8A%98%EC%9D%98%EC%9D%BC%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0703 오늘의일기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0705%20AIR%20%EC%9E%A5%EB%A9%B4%20%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC%ED%95%B4%EB%B3%B4%EA%B8%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0705 AIR 장면 리메이크해보기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0706%20%EC%9E%90%EC%9E%91%20%EB%85%B8%EB%B2%A8%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%84%B0.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0706 자작 노벨 스크립터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0714%20%EC%98%A4%EB%8A%98%EC%9D%98%EC%9D%BC%EA%B8%B0%202.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0714 오늘의일기 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B5%AC%EA%B2%A8%EC%A7%84%20%EB%A7%90%EB%AD%89%EC%B9%98%EB%93%A4/2026/0731%20%EB%8D%94%EC%9C%84.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0731 더위
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>0725</h1>
+
+<p>2026년 7월 25일</p>
+<hr />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ElsOxAQd3eg?si=xwU5FK7NerHVcNjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>6월 말에 한번 해봐야겠다 한 </p>
+<p>미니 프로젝트가 마무리되었다.</p>
+<p>내가 옛날에 개발하고, 완성되지 못한 채 방치되어 있던</p>
+<p>노벨 스크립터를 내 최신 엔진에 추가하는 것.</p>
+<p>그리고 그 노벨 엔진 구현체로 </p>
+<p>AIR 의 한 장면을 만들어 보는 것.</p>
+<p>이 두 개가 이번 프로젝트의 핵심이었다.</p>
+<p><code>구겨진 말뭉치들</code> 의 7월 5일 글을 보면 알겠지만</p>
+<p>실질적으로 프로젝트 시작한 날은 20일 전이고 - </p>
+<p>순수 개발시간만 측정해 보면</p>
+<p>대략 일주일정도 들었던 것 같다.</p>
+<hr />
+<p>그러면 먼저, 내 엔진의 변경점부터 소개해 보겠다.</p>
+<p>첫 번째, 텍스트렌더링을 갈아엎었다.</p>
+<p>원래는, 내가 몇 년 전부터</p>
+<p>Freetype 표준을 지키지 않은,</p>
+<p>눈대중으로 만든 텍스트 셰이핑 알고리즘을 썼었다.</p>
+<p>내가 직접 검증한 ttf 파일은 괜찮지만,</p>
+<p>"아무 폰트나 가져와도 잘 작동(=셰이핑이 잘 된다)한다"</p>
+<p>라는 보장이 없었다.</p>
+<p>(실제로 H / V 정렬 관련해서 문제가 굉장히 많았다)</p>
+<p>그런데, 비주얼 노벨 엔진에 </p>
+<p>텍스트 렌더링이 매우 중요한 요소인데</p>
+<p>이렇게 대충 만들면 안되겠다 싶어서</p>
+<p>glyph / font metrics 관련 표준 사양을 추가해 주었다.</p>
+<p><img src="0725.gif" alt="0725.gif" width="300" style="display: block; margin: 0 auto;" /></p>
+<p>위 GIF를 보면, 이제 글리프 CPU 컬링 &amp; GPU 클리핑도 완벽하게 동작한다.</p>
+<p>이것도 언젠가는 꼭 갈아 엎어야지 하던 기능이다.</p>
+<p><br></p>
+<p>두 번째, 스크립터를 위한 기능 및 TransitionSprite2D 추가되었다.</p>
+<p>위 영상을 보면, Window slice나 Alpha Blending같은 효과로</p>
+<p>트랜지션을 적용하는 걸 볼 수 있다.</p>
+<p>이는 새로 만든 TransitionSprite2D 로 구현되었다.</p>
+<p>또, GUI 단에 mouse_passthrough 라는 필터 속성을 달아서</p>
+<p>IControl 이 기본적으로 hovered_object를 잡고,</p>
+<p>저 속성에 따라서 입력을 아예 못 받게 만들 수 있게 했다.</p>
+<p><br></p>
+<p>세 번째, 비동기 에셋 로더가 클래스화되었다.</p>
+<p>원래는 동기적으로 몇 개의 이미지만 로딩했지만</p>
+<p>엔진을 어느정도 올렸다면 필수적인 기능인,</p>
+<p>비동기 에셋 로딩을 구현했다.</p>
+<p>그냥 스레드풀 쓰는 걸 클래스화 시켜주었다.</p>
+<hr />
+<p>스크립터를 소개해보겠다.</p>
+<p>전체적인 구조는, 전에 쓴 글에서 소개한</p>
+<p>옛날 구조와 똑같다.</p>
+<p>다른 점이 있다면,</p>
+<p>리소스 로딩 부분에서</p>
+<p><code>res</code> 라는 키워드를 만들어서</p>
+<p>이미지 / 오디오 / 보이스 팩을</p>
+<p>직렬화시켰다.</p>
+<p>또 <code>global_state</code> 랑 <code>save_state</code> 를 만들어서,</p>
+<p>각각 전역 변수(세이브파일과 상관X)와 세이브파일 변수를</p>
+<p>저장할 수 있게 했다.</p>
+<p>가장 크고, 혁신적인 변경점이라고 하면</p>
+<p>파이썬을 적극 도입했다는 것이다.</p>
+<p>옛날에는 <code>setvar</code> 라는 명령이 있어서</p>
+<p>a 라는 변수에 값 리터럴을 지정하는 방식이었는데,</p>
+<p>그때는 내가 인터프리터를 직접 만들다 보니까</p>
+<p>기본적인 산술연산은 물론</p>
+<p>배열, 함수, 클래스, 메서드 같은 걸</p>
+<p>전부 구현해야 했다.</p>
+<p>(너무 귀찮았다)</p>
+<p>이번 구현에는, 옛날부터 알고 있던 </p>
+<p><code>pocketpy</code>  라는 C++ 용 파이썬 인터프리터를 추가해서</p>
+<p>(pkpy의 최신 버전은 이식성 때문에 C로 다시 쓰인 듯 하다)</p>
+<p><code>@ "파이썬 코드"</code> </p>
+<p>이렇게 문자열을 넘기면 </p>
+<p>그대로 파이썬을 쓸 수 있게 하였다.</p>
+<p>이게 좋은 점이,</p>
+<p>파이썬 문법으로 변수를 만들어 두면</p>
+<p>조건문이나 대사에서도</p>
+<p>"a &gt;= 10 and a % 2 == 0"</p>
+<p>이런 조건을 그대로 쓰거나</p>
+<p>"변수 a의 값은 {a}입니다"</p>
+<p>이렇게 대사 안에다가 변수를 출력할 수 있다.</p>
+<p>(실제로 전부 지원하는 기능이다)</p>
+<hr />
+<p>이전 글에서도 언급했지만,</p>
+<p>'어느 시점에서라도' 게임을 저장하고</p>
+<p>불러오는 기능은</p>
+<p>완벽하게 구현되었다.</p>
+<p>또, persistent 파일이 존재해서</p>
+<p><code>global_state</code> 소속 변수를 영구적으로 저장하고</p>
+<p>현재 대사를 '한 번이라도 보았는지' 여부를 저장해 두어서</p>
+<p>'읽은 곳까지 넘기기' 기능을 만들 수 있다. </p>
+<hr />
+<p>위 영상에서 쓴 스크립트는 다음과 같다.</p>
+<details><summary>스크립트 펼치기</summary>
+    <p>
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span>
+<span class="normal">427</span>
+<span class="normal">428</span>
+<span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span>
+<span class="normal">436</span>
+<span class="normal">437</span>
+<span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span>
+<span class="normal">445</span>
+<span class="normal">446</span>
+<span class="normal">447</span>
+<span class="normal">448</span>
+<span class="normal">449</span>
+<span class="normal">450</span>
+<span class="normal">451</span>
+<span class="normal">452</span>
+<span class="normal">453</span>
+<span class="normal">454</span>
+<span class="normal">455</span>
+<span class="normal">456</span>
+<span class="normal">457</span>
+<span class="normal">458</span>
+<span class="normal">459</span>
+<span class="normal">460</span>
+<span class="normal">461</span>
+<span class="normal">462</span>
+<span class="normal">463</span>
+<span class="normal">464</span>
+<span class="normal">465</span>
+<span class="normal">466</span>
+<span class="normal">467</span>
+<span class="normal">468</span>
+<span class="normal">469</span>
+<span class="normal">470</span>
+<span class="normal">471</span>
+<span class="normal">472</span>
+<span class="normal">473</span>
+<span class="normal">474</span>
+<span class="normal">475</span>
+<span class="normal">476</span>
+<span class="normal">477</span>
+<span class="normal">478</span>
+<span class="normal">479</span>
+<span class="normal">480</span>
+<span class="normal">481</span>
+<span class="normal">482</span>
+<span class="normal">483</span>
+<span class="normal">484</span>
+<span class="normal">485</span>
+<span class="normal">486</span>
+<span class="normal">487</span>
+<span class="normal">488</span>
+<span class="normal">489</span>
+<span class="normal">490</span>
+<span class="normal">491</span>
+<span class="normal">492</span>
+<span class="normal">493</span>
+<span class="normal">494</span>
+<span class="normal">495</span>
+<span class="normal">496</span>
+<span class="normal">497</span>
+<span class="normal">498</span>
+<span class="normal">499</span>
+<span class="normal">500</span>
+<span class="normal">501</span>
+<span class="normal">502</span>
+<span class="normal">503</span>
+<span class="normal">504</span>
+<span class="normal">505</span>
+<span class="normal">506</span>
+<span class="normal">507</span>
+<span class="normal">508</span>
+<span class="normal">509</span>
+<span class="normal">510</span>
+<span class="normal">511</span>
+<span class="normal">512</span>
+<span class="normal">513</span>
+<span class="normal">514</span>
+<span class="normal">515</span>
+<span class="normal">516</span>
+<span class="normal">517</span>
+<span class="normal">518</span>
+<span class="normal">519</span>
+<span class="normal">520</span>
+<span class="normal">521</span>
+<span class="normal">522</span>
+<span class="normal">523</span>
+<span class="normal">524</span>
+<span class="normal">525</span>
+<span class="normal">526</span>
+<span class="normal">527</span>
+<span class="normal">528</span>
+<span class="normal">529</span>
+<span class="normal">530</span>
+<span class="normal">531</span>
+<span class="normal">532</span>
+<span class="normal">533</span>
+<span class="normal">534</span>
+<span class="normal">535</span>
+<span class="normal">536</span>
+<span class="normal">537</span>
+<span class="normal">538</span>
+<span class="normal">539</span>
+<span class="normal">540</span>
+<span class="normal">541</span>
+<span class="normal">542</span>
+<span class="normal">543</span>
+<span class="normal">544</span>
+<span class="normal">545</span>
+<span class="normal">546</span>
+<span class="normal">547</span>
+<span class="normal">548</span>
+<span class="normal">549</span>
+<span class="normal">550</span>
+<span class="normal">551</span>
+<span class="normal">552</span>
+<span class="normal">553</span>
+<span class="normal">554</span>
+<span class="normal">555</span>
+<span class="normal">556</span>
+<span class="normal">557</span>
+<span class="normal">558</span>
+<span class="normal">559</span>
+<span class="normal">560</span>
+<span class="normal">561</span>
+<span class="normal">562</span>
+<span class="normal">563</span>
+<span class="normal">564</span>
+<span class="normal">565</span>
+<span class="normal">566</span>
+<span class="normal">567</span>
+<span class="normal">568</span>
+<span class="normal">569</span>
+<span class="normal">570</span>
+<span class="normal">571</span>
+<span class="normal">572</span>
+<span class="normal">573</span>
+<span class="normal">574</span>
+<span class="normal">575</span>
+<span class="normal">576</span>
+<span class="normal">577</span>
+<span class="normal">578</span>
+<span class="normal">579</span>
+<span class="normal">580</span>
+<span class="normal">581</span>
+<span class="normal">582</span>
+<span class="normal">583</span>
+<span class="normal">584</span>
+<span class="normal">585</span>
+<span class="normal">586</span>
+<span class="normal">587</span>
+<span class="normal">588</span>
+<span class="normal">589</span>
+<span class="normal">590</span>
+<span class="normal">591</span>
+<span class="normal">592</span>
+<span class="normal">593</span>
+<span class="normal">594</span>
+<span class="normal">595</span>
+<span class="normal">596</span>
+<span class="normal">597</span>
+<span class="normal">598</span>
+<span class="normal">599</span>
+<span class="normal">600</span>
+<span class="normal">601</span>
+<span class="normal">602</span>
+<span class="normal">603</span>
+<span class="normal">604</span>
+<span class="normal">605</span>
+<span class="normal">606</span>
+<span class="normal">607</span></pre></div></td><td class="code"><div><pre><span></span><code>res bg {
+    미스즈첫만남 : image = &quot;bg/미스즈첫만남.png&quot;,
+    제방         : image = &quot;bg/제방.png&quot;,
+    상점         : image = &quot;bg/상점.png&quot;,
+    검정         : image = &quot;bg/검정.png&quot;,
+}
+
+res stand {
+    m_a기본 : image = &quot;stand/A_기본.png&quot;,
+    m_a권유 : image = &quot;stand/A_권유.png&quot;,
+    m_a눈웃음 : image = &quot;stand/A_눈웃음.png&quot;,
+    m_a울상 : image = &quot;stand/A_울상.png&quot;,
+    m_b기본 : image = &quot;stand/B_기본.png&quot;,
+    m_b놀람 : image = &quot;stand/B_놀람.png&quot;,
+    m_b눈웃음 : image = &quot;stand/B_눈웃음.png&quot;,
+    m_b아쉬움 : image = &quot;stand/B_아쉬움.png&quot;,
+    m_b어색 : image = &quot;stand/B_어색.png&quot;,
+    m_b주스 : image = &quot;stand/B_주스.png&quot;,
+}
+
+res voice {
+    // voicepack 이란?
+    // 폴더를 받고,
+    // 그 안의 모든 오디오 파일의 이름이 &#39;숫자&#39; 라고 가정.
+    // 그 모든 오디오를 로딩한 후 - 
+    // 
+    // setvoiceenabled true
+    // 
+    // setvoicepack &quot;voice.AIR_VoicePack&quot;
+    // 
+    // setvoiceindex 64
+    // ...
+    // setvoiceindex 130
+    // 
+    //      이런 식으로 써준다.
+
+    AIR : voicepack = &quot;koe/&quot;,
+}
+
+
+
+label main {
+
+    // ···
+    // ⋯
+    // •••
+    // 
+    // 총 63부터 156까지 필요.
+    // 
+    // 63 ~ 88
+    // 
+    //      89 ~ 114
+    // 
+    //      115 ~ 150
+    // 
+    // 151 ~ 156
+
+    @ &quot;
+class Align:
+    pass
+
+Align.CENTER = (800.0, 540.0)
+
+MISUZU_STAND_SIZE = (1024, 768)
+    &quot;
+
+    setchar &quot;m&quot; &quot;목소리&quot;
+    setchar &quot;y&quot; &quot;유키토&quot;
+
+    setbg &quot;bg.제방&quot;
+
+    setvoiceenabled True
+    setvoicepack &quot;voice.AIR&quot;
+    setvoiceindex 63
+
+    // 63
+    m &quot;으음···&quot;
+
+    hideui 1.0
+    transbg &quot;bg.미스즈첫만남&quot; &quot;windowslice&quot; 2.0
+    showui 1.0
+
+    &quot;바로 옆에 서서, 몸으로 바람을 쐬고 있는 소녀가 있었다.&quot;
+
+    setvoiceenabled False
+    y &quot;··· ··· ···&quot;
+    setvoiceenabled True
+
+
+    &quot;그것은 흡사, 하늘을 나는 듯한 모습.&quot;
+    &quot;나는 숨을 멈춘 채 바라보았다.&quot;
+    &quot;하지만 그것은 한순간이었다.&quot;
+    &quot;그녀의 발밑을 보았다.&quot;
+    &quot;그녀는 내가 앉아있는 제방 콘크리트 위에 분명하게 서 있다.&quot;
+    &quot;그래서 곧 흥미를 잃었다.&quot;
+
+    setchar &quot;m&quot; &quot;소녀&quot;
+
+    // 64
+    m &quot;음~&quot;
+
+    hideui 1.0
+    transbg &quot;bg.제방&quot; &quot;blendalpha&quot; 2.0
+    showui 1.0
+
+    // 65
+    m &quot;핫···&quot;
+
+    &quot;소녀는 긴 기지개를 끝내고, 나를 향해 돌아서서 방긋 웃었다.&quot;
+    &quot;나는 소녀를 무시하고 정면을 바라보았다.&quot;
+
+    showstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+    // 66
+    m &quot;안녕하세요~&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+    // 67
+    m &quot;주먹밥이 커다랗네요&quot;
+    // 68
+    m &quot;음료수 없어도, 괜찮아요?&quot;
+    &quot;말을 걸고 있는 듯하다.&quot;
+    // 69
+    m &quot;사올게요&quot;
+
+    hidestand &quot;misuzu&quot; 0.5
+
+    &quot;제방에서 휙 뛰어내리곤, 내 눈앞을 지나서 다다다 뛰어갔다.&quot;
+    &quot;점심시간에 잠시 빠져나왔나?&quot;
+    &quot;교복도 입고 있으니, 그녀는 틀림없이 저 학교 학생이다.&quot;
+    &quot;자판기에서 종이팩 주스를 산 뒤, 다시 뛰어오고 있다.&quot;
+    &quot;···뛰어오는 도중에, 넘어졌다.&quot;
+    &quot;주스가, 제각기 다른 방향으로 굴러갔다.&quot;
+    &quot;울상을 지은 채 일어나서는, 열심히 돌아다니며 주스를 주워서 겨우 내가 있는 곳까지 돌아온다.&quot;
+
+    showstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+    // 70
+    m &quot;받아요&quot;
+    &quot;한껏 웃는 얼굴로 아무 일도 없었다는 듯이, 나에게 주스 하나를 내민다.&quot;
+    // 71
+    y &quot;수고했어&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a울상&quot; 0.5
+
+    // 72
+    m &quot;가, 가오···&quot;
+    &quot;곧장 울상이 된다.&quot;
+    // 73
+    y &quot;다쳤으면, 돌아가&quot;
+    // 74
+    m &quot;괜찮아요···&quot;
+
+    hidestand &quot;misuzu&quot; 0.5
+
+    &quot;그렇게 말하면서, 내 옆에 앉는다.&quot;
+
+
+
+    &quot;신경 써주는 게 아니라, 그냥 귀찮았다.&quot;
+    &quot;주스 용기 옆면에, 붙어있던 빨대를 꽃는다.&quot;
+    &quot;후루루룩.&quot;
+    &quot;목으로 흘러넘긴다.&quot;
+    &quot;물컹···&quot;
+
+    // 75
+    y &quot;푸웁···!&quot;
+    &quot;예상도 하지 못한 이상한 감각이 들어, 곧장 내용물을 뱉어낸다.&quot;
+    y &quot;뭐야, 이건···&quot;
+    &quot;나는 주스 라벨을 본다.&quot;
+    &quot;··· \&quot;물컹물컹 걸쭉, 복숭아맛\&quot;&quot;
+    setvoiceenabled False
+    y &quot;··· ··· ···&quot;
+    setvoiceenabled True
+    &quot;나는 종이팩을 거꾸로 뒤집어서는 쥐어짠다.&quot;
+    &quot;뚝   뚝···&quot;
+    &quot;뚝뚝뚝···&quot;
+
+    showstand &quot;misuzu&quot; &quot;stand.m_b놀람&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+    m &quot;와···&quot;
+    &quot;그것을 본 소녀가 황급히 내 손을 잡고는, 말린다.&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a울상&quot; 0.5
+
+    m &quot;어째서, 그런 짓을 하는 걸까···&quot;
+    &quot;다시 또 울상.&quot;
+    // 79
+    y &quot;날 놀리는 거잖아&quot;
+    m &quot;그런 거 아니에요&quot;
+    &quot;보니까, 소녀가 마신 주스도, 같은 라벨이었다.&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a권유&quot; 0.5
+
+    // 81
+    m &quot;맛있어요, 이거&quot;
+
+    &quot;놀리는 기색 하나 없이, 내게 진심으로 권하는 것이었다.&quot;
+    m &quot;필요 없어요?&quot;
+    y &quot;필요 없어&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_b아쉬움&quot; 0.5
+
+    m &quot;음~·· 그럼, 내가 두 개 다 마실게요···&quot;
+    y &quot;엉, 애시당초 네 거잖아&quot;
+    setvoiceenabled False
+    m &quot;··· ··· ···&quot;
+    setvoiceenabled True
+    &quot;서운한 듯한 표정이다.&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_b어색&quot; 0.5
+
+    // 86
+    m &quot;기뻐서 그래요~&quot;
+    &quot;그런 듯하군.&quot;
+
+
+    hidestand &quot;misuzu&quot; 0.5
+
+    &quot;나는 후딱 끼니를 때우고 이 장소를 떠나고 싶다.&quot;
+    &quot;하지만 거대한 주먹밥은 아직 절반도 줄지 않았다.&quot;
+    setvoiceenabled False
+    m &quot;··· ··· ···&quot;
+    setvoiceenabled True
+    &quot;똑.&quot;
+
+    showstand &quot;misuzu&quot; &quot;stand.m_b주스&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+    &quot;··· ··· ···&quot;
+    &quot;꼬록꼬록꼬록···&quot;
+    &quot;진한 액체가 목을 타고 지나가는 소리가 들려온다.&quot;
+    &quot;꿀꺽꿀꺽꿀꺽···같은 상쾌한 소리와는 상당히 멀다.&quot;
+    &quot;그 소리를 듣기만 해도 체할 것 같다.&quot;
+    &quot;얼른 주먹밥을 해치우기로 한다.&quot;
+    &quot;우물우물···&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+    // 87
+    m &quot;목이 메이면, 말해요&quot;
+    // 88
+    y &quot;너도&quot;
+
+    hidestand &quot;misuzu&quot; 0.5
+
+    &quot;나는 주먹밥을 다 먹고, 제방에서 뛰어내린다.&quot;
+    &quot;이제부터 어떻게 할까?&quot;
+    &quot;물론 인형을 찾아야 하겠지만, 우선 기분 나쁜 주스를 마시는 녀석에게서 떨어지고 싶다.&quot;
+
+    choice {
+    case &quot;걸어간다&quot; {
+
+        setvoiceindex 89
+
+        hideui 1.0
+        transbg &quot;bg.상점&quot; &quot;windowslice&quot; 2.0
+        showui 1.0
+
+
+        &quot;나는 걷기 시작했다.&quot;
+        &quot;뒤에서 발소리가 난다.&quot;
+        &quot;총총총···&quot;
+        &quot;뒤를 돌아보자 아니나 다를까, 소녀가 따라오고 있다.&quot;
+        &quot;나와 눈이 마주치자, 미소를 짓는다.&quot;
+        &quot;내가 빠르게 걷자, 이번에는 다다다다 뛰어서 따라온다.&quot;
+        &quot;나는 걸음을 멈추고, 뒤돌아 본다.&quot;
+
+        showstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+        setvoiceenabled False
+        m &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        // 89
+        y &quot;··· ··· ?&quot;
+        setvoiceenabled False
+        m &quot;··· ··· ···&quot;
+        setvoiceenabled True
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        m &quot;··· 쓰레기, 쓰레기&quot;
+        &quot;가까이 있던 쓰레기통에, 빈 종이팩을 버린다.&quot;
+        y &quot;그럼 이만&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a권유&quot; 0.5
+
+        m &quot;잠깐만요&quot;
+        y &quot;뭐야&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 94
+        m &quot;해변에 가요&quot;
+
+        // 95   
+        y &quot;어째서?&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 96   
+        m &quot;놀고 싶으니까요&quot;
+        // 97   
+        y &quot;뭐···?&quot;
+        // 98   
+        m &quot;어제, 아이들이 거기서 놀았어요.&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 99    
+        m &quot;계속 바라보고 있었어요.&quot;
+        // 100   
+        m &quot;즐거워 보이네, 나도 놀고 싶어~하고&quot;
+        // 101    
+        m &quot;계속 그렇게 생각했어요&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 102     
+        m &quot;곤히 잠든 당신 곁에서요&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        // 103     
+        m &quot;어제 저녁에 잤죠? 아까 거기에서&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b눈웃음&quot; 0.5
+
+        // 104     
+        m &quot;한가하나 싶어서, 계속 찔러봤어요.&quot;
+        // 105      
+        m &quot;배나 등을 쿡쿡 말예요&quot;
+        // 106      
+        m &quot;그래도 전혀 일어날 기미가 안 보여서, 포기했어요&quot;
+        // 107 
+        m &quot;아주 지쳤었나 봐요&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 108
+        m &quot;피로는 풀렸어요?&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+        // 109
+        m &quot;오늘은 한가해요?&quot;
+
+
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        &quot;··· 이상한 녀석이다.&quot;
+        &quot;설마 내가 그렇게 착한 청년처럼 보이는 걸까?&quot;
+        &quot;혹은 뭔가, 다른 꿍꿍이를 갖고 행동하는 걸까?&quot;
+        &quot;돈은 갖고 있으려나?&quot;
+        &quot;마침 집에 방이 하나 비어있지는 않을까?&quot;
+        &quot;마침 아버지가 일이 많아서 늦게 귀가하시면, 저녁밥을 얻어먹을 수 있지 않을까···?&quot;
+        &quot;여러 가지 생각이 소용돌이쳤다.&quot;
+        &quot;아니야, 하고 그것들을 전부 지워버렸다.&quot;
+        &quot;아무리 우호적이라도, 이런 녀석과는 엮이지 않는 것이 무난하다.&quot;
+        &quot;타박상 입은 발목으로 걸음을 돌리면서 나는 그렇게 생각한다.&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b기본&quot; 0.5
+
+        // 110
+        m &quot;자, 가요!&quot;
+        &quot;어느샌가 내 앞에 서서 팔을 끌어당기고 있다.&quot;
+        // 111
+        y &quot;아니··· 나는 바빠&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 112
+        m &quot;하지만 어제도 잤고, 오늘도 주먹밥을 먹었잖아요&quot;
+        // 113
+        y &quot;그건 휴식이야. 휴식도 필요하잖아&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a울상&quot; 0.5
+
+        // 114        (걸어간다)
+        m &quot;그동안은 한가···&quot;
+
+    }
+    case &quot;달려간다&quot; {
+
+        setvoiceindex 115
+
+        showstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        &quot;빤히~&quot;
+        &quot;눈이 마주치고 있다···&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 115
+        m &quot;니하하&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        y &quot;대시!&quot;
+        &quot;즉각 자세를 잡고 달려간다.&quot;
+
+        hidestand &quot;misuzu&quot; 0.2
+
+        hideui 0.6
+        transbg &quot;bg.검정&quot; &quot;windowslice&quot; 1.6
+        showui 0.6
+
+
+
+        m &quot;와···&quot;
+        &quot;소녀가 깜짝 놀라며 소리를 질렀지만, 나는 뒤돌아 보지 않는다.&quot;
+
+
+        hideui 0.6
+        transbg &quot;bg.상점&quot; &quot;windowslice&quot; 1.6
+        showui 0.6
+
+
+        &quot;그대로 정통으로···&quot;
+        // 이때 스크린셰이크가 있음.
+        &quot;퍽!&quot;
+        y &quot;크억···&quot;
+        &quot;방치되어 있던 세발자전거에 내 다리를 박았다.&quot;
+        y &quot;(누구냐! 빌어먹을 자식)&quot;
+        &quot;근처 아이가 이쪽을 가만히 보며 우뚝 서 있다.&quot;
+        y &quot;젠장···&quot;
+        &quot;다리가 아파서, 제대로 달릴 수 없다.&quot;
+        &quot;한 쪽 발로 스카이콩콩 타듯이 뛴다.&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        &quot;엉망진창 꼴사납다.&quot;
+        &quot;문득 바보 같아져서, 달리기를 멈춘다.&quot;
+
+        // 121
+        m &quot;저기··· 안 아파요?&quot;
+        &quot;내 뒤에서 말을 건네고 있다.&quot;
+        y &quot;엉, 이 정도 쯤이야&quot;
+
+        showstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; &quot;(Align.CENTER, MISUZU_STAND_SIZE)&quot; 0.5
+
+        m &quot;··· 그치만 총총거리며 한 쪽 다리로 뛰었는걸요&quot;
+        y &quot;애들이 있으니까 좀 익살스럽게 행동해봤어&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b눈웃음&quot; 0.5
+
+        m &quot;웃겼어요. 생각만 해도 웃음이 나와요&quot;
+        m &quot;니하하&quot;
+        &quot;최악이다···&quot;
+        &quot;소녀는 웃는 얼굴로, 아직 덜 마신 주스 빨대에 입을 댄다.&quot;
+        y &quot;···그래서 나한테 뭐 용건 있어?&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b주스&quot; 0.5
+
+        &quot;소녀가 주스를 후루룩거리며 끝까지 마시고서 고개를 든다.&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 128
+        m &quot;해변에 가요&quot;
+        y &quot;뭐?&quot;
+        // 130
+        m &quot;해변, 저기&quot;
+        &quot;뒤를 가르킨다.&quot;
+
+        // 131
+        y &quot;어째서?&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 132
+        m &quot;놀고 싶으니까요&quot;
+        //  133
+        y &quot;뭐···?&quot;
+        // 134
+        m &quot;어제, 아이들이 거기서 놀았어요.&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 135
+        m &quot;계속 바라보고 있었어요.&quot;
+        // 136
+        m &quot;즐거워 보이네, 나도 놀고 싶어~하고&quot;
+        //  137
+        m &quot;계속 그렇게 생각했어요&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        //  138
+        m &quot;곤히 잠든 당신 곁에서요&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        // 139
+        m &quot;어제 저녁에 잤죠? 아까 거기에서&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b눈웃음&quot; 0.5
+
+        // 140
+        m &quot;한가하나 싶어서, 계속 찔러봤어요.&quot;
+        // 141
+        m &quot;배나 등을 쿡쿡 말예요&quot;
+        // 142
+        m &quot;그래도 전혀 일어날 기미가 안 보여서, 포기했어요&quot;
+        // 143
+        m &quot;아주 지쳤었나 봐요&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+        // 144
+        m &quot;피로는 풀렸어요?&quot;
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+        // 145
+        m &quot;오늘은 한가해요?&quot;
+
+        setvoiceenabled False
+        y &quot;··· ··· ···&quot;
+        setvoiceenabled True
+        &quot;··· 이상한 녀석이다.&quot;
+        &quot;설마 내가 그렇게 착한 청년처럼 보이는 걸까?&quot;
+        &quot;혹은 뭔가, 다른 꿍꿍이를 갖고 행동하는 걸까?&quot;
+        &quot;돈은 갖고 있으려나?&quot;
+        &quot;마침 집에 방이 하나 비어있지는 않을까?&quot;
+        &quot;마침 아버지가 일이 많아서 늦게 귀가하시면, 저녁밥을 얻어먹을 수 있지 않을까···?&quot;
+        &quot;여러 가지 생각이 소용돌이쳤다.&quot;
+        &quot;아니야, 하고 그것들을 전부 지워버렸다.&quot;
+        &quot;아무리 우호적이라도, 이런 녀석과는 엮이지 않는 것이 무난하다.&quot;
+        &quot;타박상 입은 발목으로 걸음을 돌리면서 나는 그렇게 생각한다.&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_b기본&quot; 0.5
+
+        // 146
+        m &quot;자, 가요!&quot;
+        &quot;어느샌가 내 앞에 서서 팔을 끌어당기고 있다.&quot;
+        // 147
+        y &quot;아니··· 나는 바빠&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+        // 148
+        m &quot;하지만 어제도 잤고, 오늘도 주먹밥을 먹었잖아요&quot;
+        // 149
+        y &quot;그건 휴식이야. 휴식도 필요하잖아&quot;
+
+        transstand &quot;misuzu&quot; &quot;stand.m_a울상&quot; 0.5
+
+        // 150     (달려간다)
+        m &quot;애들도 웃겨줬고···&quot;
+    }
+    }
+
+
+    setvoiceindex 151
+
+    setvoiceenabled False
+    y &quot;··· ··· ···&quot;
+    setvoiceenabled True
+
+    // 151
+    y &quot;물건을 찾고 있어. 언제나 그 일로 머릿속이 꽉 차있다구&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+    // 152
+    y &quot;그래서 놀아줄 수 없어&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a눈웃음&quot; 0.5
+
+    // 153
+    m &quot;그러면 같이 찾아요~&quot;
+    // 154
+    m &quot;이 근처에요?&quot;
+    // 155
+    y &quot;북극이나 남극이나 둘 중 한 곳이라고 생각해&quot;
+
+    transstand &quot;misuzu&quot; &quot;stand.m_a기본&quot; 0.5
+
+    // 156
+    m &quot;그럼, 다녀올게요~&quot;
+
+    hidestand &quot;misuzu&quot; 0.5
+
+    &quot;다다다···&quot;
+    setvoiceenabled False
+    y &quot;··· ··· ···&quot;
+    setvoiceenabled True
+    &quot;달려가고 말았다.&quot;
+    &quot;상당히 머리가 나쁜 녀석일지도 모른다.&quot;
+
+
+    hideui 1.0
+    transbg &quot;bg.제방&quot; &quot;windowslice&quot; 2.0
+    showui 1.0
+
+    &quot;나는 인형찾기를 재개한다.&quot;
+
+}
+</code></pre></div></td></tr></table></div>
+    </p>
+
+</details>
+
+<p>스크립트를 적으면서 신기했던 건,</p>
+<p>저 장면에 </p>
+<p><code>걸어간다 / 달려간다</code> 분기가 있는데,</p>
+<p>처음에는 해변에 가자고 하는 대사까지 나뉜 줄 알았던 게</p>
+<p>약간씩 다른 보이스파일로</p>
+<p>더 길게 나뉘어 있었다는 점이다.</p>
+<hr />
+<p>오랜만에 진행한 미니 프로젝트다 보니 </p>
+<p>잘 끝나서 뿌듯하다.</p>
+<p>마지막 글이 3달 전이어서</p>
+<p>속도낸 것도 있는듯</p>
+<hr />
+<p>++ 추가</p>
+<p>System Tween에, 모든 트위닝이 끝나면 resume하는 <code>WaitForAll</code> 도 추가해주었다.</p>
+<div class="highlight"><pre><span></span><code><span class="k">co_await</span><span class="w"> </span><span class="n">WaitForAll</span><span class="p">(...)</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2026. scenent. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/scenent" target="_blank" rel="noopener" title="Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:puresnows32@gmail.com" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.code.copy", "content.footnote.tooltips", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../../javascripts/rain.js"></script>
+      
+    
+  </body>
+</html>
