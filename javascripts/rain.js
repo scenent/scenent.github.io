@@ -18,23 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const CONFIG = {
 
         // 빗방울 개수
-        dropCount: 300,
+        dropCount: 390,
 
 
         // 속도 배율
         // 낮을수록 느림
-        speedMultiplier: 0.93,
+        speedMultiplier: 1.5, // 0.93,
 
 
         // 바람
         // 0   = 수직
         // -값 = 왼쪽 바람
         // +값 = 오른쪽 바람
-        wind: -1.2,
+        wind: 0, // -1.2,
 
 
         // 색상
-        color: "100,140,180",
+        color: "80,120,160", // "100,140,180",
 
 
         // true  = 모든 빗방울 동일
@@ -191,9 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            this.length =
-                24 +
-                Math.random() * 20;
+            this.length = 40 + Math.random() * 30; // 24 + Math.random() * 20;
 
 
 
