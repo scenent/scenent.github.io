@@ -1,11 +1,39 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.cirno img,
+.snail img {
+  display: block;
+}
+
+.cirno {
+  text-align: left;
+  padding: 0px 0px;
+  margin-bottom: -10px;
+  line-height: 0;
+
+  transform: translateY(20px);
+}
+.cirno img {
+  // width: 120px;
+  width: 160px;
+  height: auto;
+}
+
 .snail {
   text-align: right;
   padding: 0px 0px;
   margin-bottom: -10px;
   line-height: 0;
+
+  transform: translateY(66px);
 }
 .snail img {
-  width: 120px;
+  // width: 120px;
+  width: 100px;
   height: auto;
 }
 
